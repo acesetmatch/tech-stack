@@ -7,6 +7,9 @@ import * as actions from '../actions';
 // {connect} Connect to call an action creator
 
 class ListItem extends Component {
+
+    // All elements will be animated if the layoutanimation
+    // is called before the update takes place
     componentWillUpdate() {
         LayoutAnimation.spring();
     }
